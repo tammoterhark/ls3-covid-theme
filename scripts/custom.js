@@ -106,4 +106,5 @@ $(document).ready(function(){
       //console.log('delay 500 hasClass ls-em-error = ' + checkErrorClass);
     }, 500);
   });
+  $('.question-container').removeClass('input-error');
 });

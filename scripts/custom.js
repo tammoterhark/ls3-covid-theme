@@ -38,6 +38,7 @@ $(document).ready(function(){
     }
     // The class of the 'Please select from 1 to 3 answers' div is changed after the click, not on click
     // Jquery - hasclass after delay > https://stackoverflow.com/q/52492071/872051
+    // change classes of question div and the message and help div
     var vmsg_num_answers = $(this).parent().parent().parent().parent().prev().children().first().children().last();
     var checkIntervalDelay = setInterval(function(){ 
       var checkErrorClass = vmsg_num_answers.hasClass('ls-em-error');
@@ -46,12 +47,11 @@ $(document).ready(function(){
         // input-error is set on page load
         // input-error-clicked is only set after a click
         vmsg_num_answers.parent().parent().parent().addClass('input-error-clicked');
-        // has-error-clicked is only set after a click
-        vmsg_num_answers.parent().parent().addClass('has-error-clicked');
+        vmsg_num_answers.parent().parent().addClass('has-error');
       } else {
         vmsg_num_answers.removeClass('ls-em-error-clicked');
         vmsg_num_answers.parent().parent().parent().removeClass('input-error-clicked');
-        vmsg_num_answers.parent().parent().removeClass('has-error-clicked');
+        vmsg_num_answers.parent().parent().removeClass('has-error');
       }
       clearInterval(checkIntervalDelay);
       //console.log('delay 500 hasClass ls-em-error = ' + checkErrorClass);
@@ -86,7 +86,7 @@ $(document).ready(function(){
       clearInterval(checkboxOtherDelay);
       //console.log('delay 500 hasClass checkbox-text-item = ' + checkbox_other_text.val());
     }, 500);
-    // change classes of question div
+    // change classes of question div and message and help div
     var vmsg_num_answers = $(this).parent().parent().parent().parent().parent().prev().children().first().children().last();
     var checkboxDelay = setInterval(function(){ 
       var checkErrorClass = vmsg_num_answers.hasClass('ls-em-error');
@@ -95,12 +95,11 @@ $(document).ready(function(){
         // input-error is set on page load
         // input-error-clicked is only set after a click
         vmsg_num_answers.parent().parent().parent().addClass('input-error-clicked');
-        // has-error-clicked is only set after a click
-        vmsg_num_answers.parent().parent().addClass('has-error-clicked');
+        vmsg_num_answers.parent().parent().addClass('has-error');
       } else {
         vmsg_num_answers.removeClass('ls-em-error-clicked');
         vmsg_num_answers.parent().parent().parent().removeClass('input-error-clicked');
-        vmsg_num_answers.parent().parent().removeClass('has-error-clicked');
+        vmsg_num_answers.parent().parent().removeClass('has-error');
       }
       clearInterval(checkboxDelay);
       //console.log('delay 500 hasClass ls-em-error = ' + checkErrorClass);

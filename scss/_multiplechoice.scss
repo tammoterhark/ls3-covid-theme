@@ -1,4 +1,10 @@
 .multiple-opt{
+    &.input-error{
+        .answer-container{
+            background: $CovidPink;
+        }
+    }
+
     li.question-item{
         background: lighten($CovidBlue, 35%);
         color: #222;
@@ -52,6 +58,7 @@
 	font-family: "FontAwesome";
 	content: "\f096";
     font-size: 18px;
+    line-height: 1.2;
 }
 
 .checkbox-item input[type="checkbox"]:checked + label::after{

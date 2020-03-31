@@ -2,9 +2,11 @@
 @import 'fonts'; 
 @import 'radiobuttons';
 @import 'multiplechoice';
+@import 'slider';
 
 body{
     background: #ddd;
+    background: $CovidBlue;
     font-size: 16px;
     font-family: scada, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -23,7 +25,8 @@ body{
 }
 
 .navbar-default{
-    background: #344B72;
+    background: $CovidBlue;
+    border: none;
     .navbar-nav > li a{
         color: #ddd;
 
@@ -31,10 +34,6 @@ body{
             color: #fff;
         }
     }
-}
-
-.logo-container{
-    //overflow: hidden;
 }
 
 select.form-control{
@@ -67,11 +66,17 @@ select.form-control{
 
 .asterisk{
     margin-right: 5px;
+
+    .text-danger{
+        color: $CovidBlue;
+    }
+    display: none;
 }
 
 .welcome-container-wrapper{
     background: white;
     padding: 15px;
+    margin-bottom: 30px;
 }
 
 .welcome-container{
@@ -86,7 +91,7 @@ select.form-control{
 }
 
 .question-title-container{
-    background: $CovidBlue;
+    background: $CovidRed;
     padding: 10px 15px;
 
     .question-text{

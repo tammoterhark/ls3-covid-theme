@@ -43,13 +43,14 @@ $(document).ready(function(){
       var checkErrorClass = vmsg_num_answers.hasClass('ls-em-error');
       if(checkErrorClass) {
         vmsg_num_answers.addClass('ls-em-error-clicked');
-        // has-error is set on page load
-        vmsg_num_answers.parent().parent().addClass('has-error');
+        // input-error is set on page load
+        // input-error-clicked is only set after a click
+        vmsg_num_answers.parent().parent().parent().addClass('input-error-clicked');
         // has-error-clicked is only set after a click
         vmsg_num_answers.parent().parent().addClass('has-error-clicked');
       } else {
         vmsg_num_answers.removeClass('ls-em-error-clicked');
-        vmsg_num_answers.parent().parent().removeClass('has-error');
+        vmsg_num_answers.parent().parent().parent().removeClass('input-error-clicked');
         vmsg_num_answers.parent().parent().removeClass('has-error-clicked');
       }
       clearInterval(checkIntervalDelay);
@@ -91,13 +92,14 @@ $(document).ready(function(){
       var checkErrorClass = vmsg_num_answers.hasClass('ls-em-error');
       if(checkErrorClass) {
         vmsg_num_answers.addClass('ls-em-error-clicked');
-        // has-error is set on page load
-        vmsg_num_answers.parent().parent().addClass('has-error');
+        // input-error is set on page load
+        // input-error-clicked is only set after a click
+        vmsg_num_answers.parent().parent().parent().addClass('input-error-clicked');
         // has-error-clicked is only set after a click
         vmsg_num_answers.parent().parent().addClass('has-error-clicked');
       } else {
         vmsg_num_answers.removeClass('ls-em-error-clicked');
-        vmsg_num_answers.parent().parent().removeClass('has-error');
+        vmsg_num_answers.parent().parent().parent().removeClass('input-error-clicked');
         vmsg_num_answers.parent().parent().removeClass('has-error-clicked');
       }
       clearInterval(checkboxDelay);

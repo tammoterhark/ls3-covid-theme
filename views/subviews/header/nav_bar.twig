@@ -29,8 +29,12 @@
             <span class="icon-bar"></span>
         </button>
 
-        {# Logo option #}
-        {% if( aSurveyInfo.options.brandlogo == "on") %}
+        {# Logo option -  fixed COVID logo for now #}
+        <div class=" navbar-brand  logo-container">
+        {{ image('/images/yourrisk_logo.svg', 'Your COVID-19 Risk', {"class": "logo img-responsive", "width":"100px"}) }}
+                {# <img class="logo img-responsive" width="100px" src="/tmp/assets/e4d899b3/yourrisk_logo_neg.svg" alt="Your COVID-19 Risk"> #}
+        </div>
+        {# {% if( aSurveyInfo.options.brandlogo == "on") %}
             <div class="{{ aSurveyInfo.class.navbarbrand }} logo-container"  {{ aSurveyInfo.attr.navbarbrand }}  >
                 {{ image(aSurveyInfo.options.brandlogofile, aSurveyInfo.name, {"class": "logo img-responsive", "width":"100px"}) }}
             </div>
@@ -38,7 +42,7 @@
             <div class="{{ aSurveyInfo.class.navbarbrand }}"  {{ aSurveyInfo.attr.navbarbrand }} >
                 {{ aSurveyInfo.name }}
             </div>
-        {% endif %}
+        {% endif %} #}
     </div>
     <div id="{{ aSurveyInfo.id.navbar }}" class="{{ aSurveyInfo.class.navbarcollapse }}" {{ aSurveyInfo.attr.navbarcollapse }} >
         <ul class="{{ aSurveyInfo.class.navbarlink }} navbar-right" {{ aSurveyInfo.attr.navbarlink }}>

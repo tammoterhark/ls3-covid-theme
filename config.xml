@@ -10,17 +10,17 @@
 <config>
     <!-- Those metadata are displayed in the theme configuration page.  -->
     <metadata>
-        <name>covid</name>
-        <title>Covid 19</title>
+        <name>ls3-covid-template</name>
+        <title>Your Covid-19 risk template</title>
         <creationDate/>
-        <author>admin</author>
+        <author>ToolsForResearch|Evently</author>
         <authorEmail>surveys@toolsforresearch.com</authorEmail>
-        <authorUrl>http://www.limesurvey.org</authorUrl>
-        <copyright>Copyright (C) 2005 - 2016 LimeSurvey Gmbh, Inc. All rights reserved.</copyright>
+        <authorUrl>https://www.toolsforresearch.com</authorUrl>
+        <copyright>TFR 2020</copyright>
         <license>GNU General Public License version 2 or later</license>
         <version>3.0</version>
         <apiVersion>3</apiVersion>
-        <description twig="on"><![CDATA[<strong>{{gT("LimeSurvey Bootstrap Vanilla Survey Theme")}}</strong><br>{{gT("A clean and simple base that can be used by developers to create their own Bootstrap based theme.")}}]]></description>
+        <description >Your COVID-19 Risk survey template</description>
         <last_update>2020-03-29 22:17:56</last_update>
     <extends>vanilla</extends></metadata>
 

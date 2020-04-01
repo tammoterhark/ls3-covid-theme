@@ -225,6 +225,10 @@
   color: black;
 }
 
+.multiple-opt.input-error .answer-container {
+  background: #e94a50;
+}
+
 .multiple-opt li.question-item {
   background: #92a8c9;
   color: #222;
@@ -278,14 +282,23 @@
   font-family: "FontAwesome";
   content: "\f096";
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .checkbox-item input[type="checkbox"]:checked + label::after {
   content: "\f046";
 }
 
+.slider-handle {
+  background-image: none;
+  background-color: #e94a50;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 body {
   background: #ddd;
+  background: #384e71;
   font-size: 16px;
   font-family: scada, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -304,7 +317,8 @@ body {
 }
 
 .navbar-default {
-  background: #344B72;
+  background: #384e71;
+  border: none;
 }
 
 .navbar-default .navbar-nav > li a {
@@ -342,11 +356,17 @@ select.form-control {
 
 .asterisk {
   margin-right: 5px;
+  display: none;
+}
+
+.asterisk .text-danger {
+  color: #384e71;
 }
 
 .welcome-container-wrapper {
   background: white;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .welcome-container h1 {
@@ -359,7 +379,7 @@ select.form-control {
 }
 
 .question-title-container {
-  background: #384e71;
+  background: #b71f2b;
   padding: 10px 15px;
 }
 

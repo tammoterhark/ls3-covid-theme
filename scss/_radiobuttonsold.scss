@@ -47,11 +47,13 @@
                 color: black;
             }
         }
-    }   
+    } 
 
-    &.bi{
+    &uni
+
+    &.corona7{
         .radio-item{
-            color: white;
+
             &:nth-child(1){
                 background: $covid71;
             }
@@ -73,10 +75,6 @@
             &:nth-child(7){
                 background: $covid77;
             }
-            &:nth-child(8){
-                background: $covid78;
-                color: black;
-            }
             &:hover{
                 background: #666;
                 color: white;
@@ -85,17 +83,52 @@
                 background: #bbb;
                 margin-left: 30px;
                 margin-right: 30px;
-                color: black;
                 &:hover{
                     color: black;
                 }
             }
         }
+
+        &.reverse{
+            .radio-item{
+                &:nth-child(1){
+                    background: $covid77;
+                }
+                &:nth-child(2){
+                    background: $covid76;
+                }
+                &:nth-child(3){
+                    background: $covid75;
+                }
+                &:nth-child(5){
+                    background: $covid73;
+                }
+                &:nth-child(6){
+                    background: $covid72;
+                }
+                &:nth-child(7){
+                    background: $covid71;
+                }
+
+                &:hover{
+                    background: #666;
+                    color: white;
+                }
+
+                &.checked {
+                    background: #bbb;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
     }
 
-    &.uni{
+    &.corona5{
         .radio-item{
-            color: white;
             &:nth-child(1){
                 background: $covid51;
             }
@@ -111,10 +144,6 @@
             &:nth-child(5){
                 background: $covid55;
             }
-            &:nth-child(6){
-                background: $covid56;
-                color: black;
-            }
             &:hover{
                 background: #666;
                 color: white;
@@ -124,9 +153,39 @@
                 background: #bbb;
                 margin-left: 30px;
                 margin-right: 30px;
-                color: black;
                 &:hover{
                     color: black;
+                }
+            }
+        }
+
+        &.reverse{
+            .radio-item{
+                &:nth-child(1){
+                    background: $covid55;
+                }
+                &:nth-child(2){
+                    background: $covid54;
+                }
+                &:nth-child(4){
+                    background: $covid52;
+                }
+                &:nth-child(5){
+                    background: $covid51;
+                }
+                &:hover{
+                    background: #666;
+                    color: white;
+                }
+            
+
+                &.checked {
+                    background: #bbb;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    &:hover{
+                        color: black;
+                    }
                 }
             }
         }

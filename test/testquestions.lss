@@ -17,51 +17,6 @@
   </fields>
   <rows>
    <row>
-    <qid><![CDATA[8931]]></qid>
-    <code><![CDATA[A1]]></code>
-    <answer><![CDATA[Option 1]]></answer>
-    <sortorder><![CDATA[1]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8931]]></qid>
-    <code><![CDATA[A2]]></code>
-    <answer><![CDATA[2]]></answer>
-    <sortorder><![CDATA[2]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8931]]></qid>
-    <code><![CDATA[A3]]></code>
-    <answer><![CDATA[3]]></answer>
-    <sortorder><![CDATA[3]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8931]]></qid>
-    <code><![CDATA[A4]]></code>
-    <answer><![CDATA[4]]></answer>
-    <sortorder><![CDATA[4]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8931]]></qid>
-    <code><![CDATA[A5]]></code>
-    <answer><![CDATA[Option 5]]></answer>
-    <sortorder><![CDATA[5]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
     <qid><![CDATA[8932]]></qid>
     <code><![CDATA[A1]]></code>
     <answer><![CDATA[Country 1]]></answer>
@@ -404,69 +359,6 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A1]]></code>
-    <answer><![CDATA[Option 1]]></answer>
-    <sortorder><![CDATA[1]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A2]]></code>
-    <answer><![CDATA[2]]></answer>
-    <sortorder><![CDATA[2]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A3]]></code>
-    <answer><![CDATA[3]]></answer>
-    <sortorder><![CDATA[3]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A4]]></code>
-    <answer><![CDATA[4]]></answer>
-    <sortorder><![CDATA[4]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A5]]></code>
-    <answer><![CDATA[5]]></answer>
-    <sortorder><![CDATA[5]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A6]]></code>
-    <answer><![CDATA[6]]></answer>
-    <sortorder><![CDATA[6]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <code><![CDATA[A7]]></code>
-    <answer><![CDATA[Option 7]]></answer>
-    <sortorder><![CDATA[7]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
     <qid><![CDATA[8929]]></qid>
     <code><![CDATA[A1]]></code>
     <answer><![CDATA[Option 1]]></answer>
@@ -477,8 +369,17 @@
    </row>
    <row>
     <qid><![CDATA[8929]]></qid>
+    <code><![CDATA[A10]]></code>
+    <answer><![CDATA[Option 10]]></answer>
+    <sortorder><![CDATA[10]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[8929]]></qid>
     <code><![CDATA[A2]]></code>
-    <answer><![CDATA[2]]></answer>
+    <answer><![CDATA[Option 2]]></answer>
     <sortorder><![CDATA[2]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
@@ -487,7 +388,7 @@
    <row>
     <qid><![CDATA[8929]]></qid>
     <code><![CDATA[A3]]></code>
-    <answer><![CDATA[3]]></answer>
+    <answer><![CDATA[Option 3]]></answer>
     <sortorder><![CDATA[3]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
@@ -496,7 +397,7 @@
    <row>
     <qid><![CDATA[8929]]></qid>
     <code><![CDATA[A4]]></code>
-    <answer><![CDATA[4]]></answer>
+    <answer><![CDATA[Option 4]]></answer>
     <sortorder><![CDATA[4]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
@@ -507,6 +408,42 @@
     <code><![CDATA[A5]]></code>
     <answer><![CDATA[Option 5]]></answer>
     <sortorder><![CDATA[5]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[8929]]></qid>
+    <code><![CDATA[A6]]></code>
+    <answer><![CDATA[Option 6]]></answer>
+    <sortorder><![CDATA[6]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[8929]]></qid>
+    <code><![CDATA[A7]]></code>
+    <answer><![CDATA[Option 7]]></answer>
+    <sortorder><![CDATA[7]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[8929]]></qid>
+    <code><![CDATA[A8]]></code>
+    <answer><![CDATA[Option 8]]></answer>
+    <sortorder><![CDATA[8]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[8929]]></qid>
+    <code><![CDATA[A9]]></code>
+    <answer><![CDATA[Option 9]]></answer>
+    <sortorder><![CDATA[9]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
@@ -557,6 +494,15 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
+    <qid><![CDATA[8930]]></qid>
+    <code><![CDATA[NA]]></code>
+    <answer><![CDATA[Not applicable]]></answer>
+    <sortorder><![CDATA[6]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
     <qid><![CDATA[8927]]></qid>
     <code><![CDATA[A1]]></code>
     <answer><![CDATA[Option 1]]></answer>
@@ -620,64 +566,10 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A1]]></code>
-    <answer><![CDATA[Option 1]]></answer>
-    <sortorder><![CDATA[1]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A2]]></code>
-    <answer><![CDATA[2]]></answer>
-    <sortorder><![CDATA[2]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A3]]></code>
-    <answer><![CDATA[3]]></answer>
-    <sortorder><![CDATA[3]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A4]]></code>
-    <answer><![CDATA[4]]></answer>
-    <sortorder><![CDATA[4]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A5]]></code>
-    <answer><![CDATA[5]]></answer>
-    <sortorder><![CDATA[5]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A6]]></code>
-    <answer><![CDATA[6]]></answer>
-    <sortorder><![CDATA[6]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <qid><![CDATA[8926]]></qid>
-    <code><![CDATA[A7]]></code>
-    <answer><![CDATA[Option 7]]></answer>
-    <sortorder><![CDATA[7]]></sortorder>
+    <qid><![CDATA[8927]]></qid>
+    <code><![CDATA[NA]]></code>
+    <answer><![CDATA[Not applicable]]></answer>
+    <sortorder><![CDATA[8]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
@@ -740,89 +632,13 @@
   </fields>
   <rows>
    <row>
-    <qid><![CDATA[8926]]></qid>
-    <parent_qid><![CDATA[0]]></parent_qid>
-    <sid><![CDATA[632676]]></sid>
-    <gid><![CDATA[1147]]></gid>
-    <type><![CDATA[L]]></type>
-    <title><![CDATA[q0101]]></title>
-    <question><![CDATA[List 7 no extra class]]></question>
-    <preg/>
-    <help/>
-    <other><![CDATA[N]]></other>
-    <mandatory><![CDATA[Y]]></mandatory>
-    <question_order><![CDATA[6]]></question_order>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-    <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
-    <modulename/>
-   </row>
-   <row>
     <qid><![CDATA[8927]]></qid>
     <parent_qid><![CDATA[0]]></parent_qid>
     <sid><![CDATA[632676]]></sid>
     <gid><![CDATA[1147]]></gid>
     <type><![CDATA[L]]></type>
     <title><![CDATA[q0102]]></title>
-    <question><![CDATA[List 7 extra class: corona]]></question>
-    <preg/>
-    <help/>
-    <other><![CDATA[N]]></other>
-    <mandatory><![CDATA[Y]]></mandatory>
-    <question_order><![CDATA[3]]></question_order>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-    <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
-    <modulename/>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <parent_qid><![CDATA[0]]></parent_qid>
-    <sid><![CDATA[632676]]></sid>
-    <gid><![CDATA[1147]]></gid>
-    <type><![CDATA[L]]></type>
-    <title><![CDATA[q0103]]></title>
-    <question><![CDATA[List 7 extra class: corona7 reverse]]></question>
-    <preg/>
-    <help/>
-    <other><![CDATA[N]]></other>
-    <mandatory><![CDATA[Y]]></mandatory>
-    <question_order><![CDATA[4]]></question_order>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-    <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
-    <modulename/>
-   </row>
-   <row>
-    <qid><![CDATA[8929]]></qid>
-    <parent_qid><![CDATA[0]]></parent_qid>
-    <sid><![CDATA[632676]]></sid>
-    <gid><![CDATA[1147]]></gid>
-    <type><![CDATA[L]]></type>
-    <title><![CDATA[q0104]]></title>
-    <question><![CDATA[List 5 no extra class ]]></question>
-    <preg/>
-    <help/>
-    <other><![CDATA[N]]></other>
-    <mandatory><![CDATA[Y]]></mandatory>
-    <question_order><![CDATA[5]]></question_order>
-    <language><![CDATA[en]]></language>
-    <scale_id><![CDATA[0]]></scale_id>
-    <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
-    <modulename/>
-   </row>
-   <row>
-    <qid><![CDATA[8930]]></qid>
-    <parent_qid><![CDATA[0]]></parent_qid>
-    <sid><![CDATA[632676]]></sid>
-    <gid><![CDATA[1147]]></gid>
-    <type><![CDATA[L]]></type>
-    <title><![CDATA[q0105]]></title>
-    <question><![CDATA[List 5  extra class: corona5]]></question>
+    <question><![CDATA[List with 7 or 8 options Extra class: bi]]></question>
     <preg/>
     <help/>
     <other><![CDATA[N]]></other>
@@ -835,18 +651,37 @@
     <modulename/>
    </row>
    <row>
-    <qid><![CDATA[8931]]></qid>
+    <qid><![CDATA[8929]]></qid>
     <parent_qid><![CDATA[0]]></parent_qid>
     <sid><![CDATA[632676]]></sid>
     <gid><![CDATA[1147]]></gid>
     <type><![CDATA[L]]></type>
-    <title><![CDATA[q0106]]></title>
-    <question><![CDATA[List 5  extra class: corona5 reverse]]></question>
+    <title><![CDATA[q0103]]></title>
+    <question><![CDATA[List question unlimited options. No extra class ]]></question>
     <preg/>
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[Y]]></mandatory>
     <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[8930]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[632676]]></sid>
+    <gid><![CDATA[1147]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[q0101]]></title>
+    <question><![CDATA[List with 5 or 6 options. Extra class: uni]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <question_order><![CDATA[0]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -922,17 +757,18 @@ Where you live the most of the time?</p>
     <sid><![CDATA[632676]]></sid>
     <gid><![CDATA[1147]]></gid>
     <type><![CDATA[T]]></type>
-    <title><![CDATA[q0204]]></title>
+    <title><![CDATA[q0104]]></title>
     <question><![CDATA[Additional remarks]]></question>
     <preg/>
     <help><![CDATA[Please be aware: everything you write here will be displayed on screen to visitors. Please do not leave any personal data, like names, addresses.]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[7]]></question_order>
+    <question_order><![CDATA[3]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
+    <modulename/>
    </row>
    <row>
     <qid><![CDATA[8936]]></qid>
@@ -940,7 +776,7 @@ Where you live the most of the time?</p>
     <sid><![CDATA[632676]]></sid>
     <gid><![CDATA[1148]]></gid>
     <type><![CDATA[K]]></type>
-    <title><![CDATA[f0204]]></title>
+    <title><![CDATA[slider]]></title>
     <question><![CDATA[How many questions would you be willing to answer?]]></question>
     <preg/>
     <help/>
@@ -951,6 +787,7 @@ Where you live the most of the time?</p>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
+    <modulename/>
    </row>
   </rows>
  </questions>
@@ -1228,6 +1065,7 @@ Where you live the most of the time?</p>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
+    <modulename/>
    </row>
   </rows>
  </subquestions>
@@ -1242,22 +1080,12 @@ Where you live the most of the time?</p>
    <row>
     <qid><![CDATA[8927]]></qid>
     <attribute><![CDATA[cssclass]]></attribute>
-    <value><![CDATA[corona7]]></value>
-   </row>
-   <row>
-    <qid><![CDATA[8928]]></qid>
-    <attribute><![CDATA[cssclass]]></attribute>
-    <value><![CDATA[corona7 reverse]]></value>
+    <value><![CDATA[bi]]></value>
    </row>
    <row>
     <qid><![CDATA[8930]]></qid>
     <attribute><![CDATA[cssclass]]></attribute>
-    <value><![CDATA[corona5]]></value>
-   </row>
-   <row>
-    <qid><![CDATA[8931]]></qid>
-    <attribute><![CDATA[cssclass]]></attribute>
-    <value><![CDATA[corona5 reverse]]></value>
+    <value><![CDATA[uni]]></value>
    </row>
    <row>
     <qid><![CDATA[8933]]></qid>
@@ -1282,7 +1110,7 @@ Where you live the most of the time?</p>
    <row>
     <qid><![CDATA[8936]]></qid>
     <attribute><![CDATA[slider_accuracy]]></attribute>
-    <value><![CDATA[6]]></value>
+    <value><![CDATA[2]]></value>
    </row>
    <row>
     <qid><![CDATA[8936]]></qid>

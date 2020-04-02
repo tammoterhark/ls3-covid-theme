@@ -246,6 +246,10 @@ body {
   color: #384e71;
 }
 
+#outerframeContainer {
+  margin-bottom: 120px;
+}
+
 .navbar-brand {
   padding: 0;
   height: 100px;

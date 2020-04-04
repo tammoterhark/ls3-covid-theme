@@ -32,7 +32,6 @@ body{
     border: none;
     .navbar-nav > li a{
         color: #ddd;
-
         &:hover{
             color: #fff;
         }
@@ -46,11 +45,9 @@ select.form-control{
 .answer-container{
     padding-top: 15px;
     padding-bottom: 15px;
-
     .ls-answers{
         ul{
             margin-bottom: 0;
-
             li:last-child{
                 margin-bottom: 0;
             }
@@ -69,7 +66,6 @@ select.form-control{
 
 .asterisk{
     margin-right: 5px;
-
     .text-danger{
         color: $CovidBlue;
     }
@@ -96,9 +92,13 @@ select.form-control{
 .question-title-container{
     background: $CovidRed;
     padding: 10px 15px;
-
     .question-text{
         color: white;
         font-weight: bold;
     }
+}
+
+.completed-wrapper{
+    padding:15px;
+    background-color: white;
 }

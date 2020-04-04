@@ -326,4 +326,9 @@ select.form-control {
   color: white;
   font-weight: bold;
 }
+
+.completed-wrapper {
+  padding: 15px;
+  background-color: white;
+}
 /*# sourceMappingURL=theme.css.map */

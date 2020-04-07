@@ -6,4 +6,4 @@ Has been tested in LimeSurvey 3.22.8(200309)
 Contributors:
 Jan Ehrhardt (Tools for Research): javascript additions
 Tammo ter Hark (Respondage): setup, styling
-Stefan Verweij (Evently): code review
+Stefan Verweij (Evently): code review, add logo

@@ -65,6 +65,15 @@ select.form-control{
     }
 }
 
+.question-help-container{
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+
 .asterisk{
     margin-right: 5px;
     .text-danger{

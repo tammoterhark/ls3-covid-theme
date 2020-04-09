@@ -304,6 +304,15 @@ select.form-control {
   color: #b71f2b;
 }
 
+.question-help-container {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.question-help-container p:last-child {
+  margin-bottom: 0;
+}
+
 .asterisk {
   margin-right: 5px;
   display: none;

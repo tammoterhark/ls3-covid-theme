@@ -179,6 +179,10 @@ $covid55: #7AD15188; */
   margin-bottom: 5px;
 }
 
+.multiple-opt li.question-item .input-sm {
+  font-size: 18px;
+}
+
 .multiple-opt li.question-item:hover {
   background: #666;
   color: white;

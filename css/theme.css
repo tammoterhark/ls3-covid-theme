@@ -18,7 +18,7 @@ $covid55: #7AD15188; */
 .list-radio .radio-item {
   background: #92a8c9;
   color: #222;
-  font-weight: bold;
+  font-weight: normal;
   padding: 10px;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
@@ -32,7 +32,7 @@ $covid55: #7AD15188; */
 .list-radio .radio-item label {
   margin-bottom: 0;
   display: block;
-  font-weight: bold;
+  font-weight: normal;
   margin-left: 20px;
 }
 
@@ -167,7 +167,7 @@ $covid55: #7AD15188; */
 .multiple-opt li.question-item {
   background: #92a8c9;
   color: #222;
-  font-weight: bold;
+  font-weight: normal;
   padding: 10px;
   margin-bottom: 5px;
 }
@@ -184,7 +184,7 @@ $covid55: #7AD15188; */
 .multiple-opt li.question-item label {
   margin-bottom: 0;
   display: block;
-  font-weight: bold;
+  font-weight: normal;
   margin-left: 20px;
 }
 
@@ -324,7 +324,7 @@ select.form-control {
 
 .question-title-container .question-text {
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .completed-wrapper {

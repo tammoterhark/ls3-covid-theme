@@ -22,21 +22,23 @@ $(document).ready(function(){
     //console.log($(this).parent().parent().prop('nodeName'));
     //console.log($(this).parent().parent().parent().prop('nodeName'));
     var radio_item = $(this);
-    var radio_item_parent = $(this).parent();
+    var radio_item_li = $(this).parent();
     var radio_item_ul = $(this).parent().parent();
     if ($(this).parent().parent().prop('nodeName') == 'LI') {
-        // jump over the extra div
-        radio_item_ul = $(this).parent().parent().parent();
-        //console.log("UL? " + radio_item_ul.prop('nodeName'));
+      // jump over the extra div
+      radio_item_li = $(this).parent().parent();
+      radio_item_ul = $(this).parent().parent().parent();
+      //console.log("UL? " + radio_item_ul.prop('nodeName'));
     }
     // radio: remove checked class for every answer row in the current ul
     radio_item_ul.children().removeClass('checked');
     // from the ul down to the last li, remove checked in all children of the li
+    // no longer needed since https://github.com/tammoterhark/ls3-covid-theme/issues/3
     radio_item_ul.children().last().children().removeClass('checked');
     // change classes of answer row
-    radio_item_parent.addClass('checked');
+    radio_item_li.addClass('checked');
     var radioDelay = setInterval(function(){
-      radio_item_parent.addClass('checked');
+      radio_item_li.addClass('checked');
       clearInterval(radioDelay);
       //console.log('delay 500 radio = ' + radio_item.val());
     }, 500);

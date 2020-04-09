@@ -56,11 +56,12 @@ select.form-control{
 }
 
 .ls-question-help{
+    padding-top: 5px;
     .em_default{
         display:none;
     }
     .ls-em-error{
-        color: $CovidRed
+        color: $CovidRed;
     }
 }
 

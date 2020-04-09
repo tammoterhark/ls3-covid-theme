@@ -19,7 +19,7 @@ $covid55: #7AD15188; */
   background: #92a8c9;
   color: #222;
   font-weight: normal;
-  padding: 10px;
+  padding-right: 20px;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
 }
@@ -33,7 +33,9 @@ $covid55: #7AD15188; */
   margin-bottom: 0;
   display: block;
   font-weight: normal;
-  margin-left: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 .list-radio .radio-item label::before {
@@ -49,6 +51,7 @@ $covid55: #7AD15188; */
   width: 16px;
   height: 16px;
   border-radius: 0;
+  margin-top: 10px;
   background-image: url("../images/chevron-right.png");
 }
 
@@ -60,6 +63,10 @@ $covid55: #7AD15188; */
 
 .list-radio .radio-item.checked:hover {
   color: black;
+}
+
+.list-radio .radio-item .input-sm {
+  font-size: 18px;
 }
 
 .list-radio.bi .radio-item {
@@ -283,6 +290,10 @@ select.form-control {
 
 .answer-container .ls-answers ul li:last-child {
   margin-bottom: 0;
+}
+
+.ls-question-help {
+  padding-top: 5px;
 }
 
 .ls-question-help .em_default {

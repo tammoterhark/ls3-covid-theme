@@ -43,11 +43,12 @@
         }
 
         &.checked {
-            background: #bbb;
+            background: $CovidRed;
             margin-left: 30px;
             margin-right: 30px;
+            color: white;
             &:hover{
-                color: black;
+                color: white;
             }
         }
 
@@ -89,12 +90,12 @@
                 color: white;
             }
             &.checked {
-                background: #bbb;
+                background: $CovidRed;
                 margin-left: 30px;
                 margin-right: 30px;
-                color: black;
+                color: white;
                 &:hover{
-                    color: black;
+                    color: white;
                 }
             }
         }
@@ -128,12 +129,12 @@
             }
 
             &.checked {
-                background: #bbb;
+                background: $CovidRed;
                 margin-left: 30px;
                 margin-right: 30px;
-                color: black;
+                color: white;
                 &:hover{
-                    color: black;
+                    color: white;
                 }
             }
         }

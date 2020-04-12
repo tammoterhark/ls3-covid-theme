@@ -106,6 +106,11 @@ $covid55: #7AD15188; */
   padding-right: 0;
 }
 
+.list-radio .radio-text-item.radio-item.checked label::before {
+  content: "\f105";
+  margin-left: -5px;
+}
+
 .list-radio .radio-text-item.radio-item.checked label::after {
   content: "";
 }

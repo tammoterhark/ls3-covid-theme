@@ -19,9 +19,13 @@ $covid55: #7AD15188; */
   background: #92a8c9;
   color: #222;
   font-weight: normal;
-  padding-right: 20px;
+  padding-left: 0;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
+}
+
+.list-radio .radio-item input[type="radio"] {
+  display: none;
 }
 
 .list-radio .radio-item:hover {
@@ -33,26 +37,30 @@ $covid55: #7AD15188; */
   margin-bottom: 0;
   display: block;
   font-weight: normal;
-  margin-left: 10px;
   padding: 10px;
   text-align: center;
 }
 
-.list-radio .radio-item label::before {
-  margin-left: -2000px;
+.list-radio .radio-item label::before, .list-radio .radio-item label::after {
+  margin: 0;
+  display: inline-block;
+  content: "";
+  width: auto;
+  height: auto;
   border: none;
-  background-color: transparent;
-  border-radius: 0;
+  top: 6px;
+  background: transparent;
+}
+
+.list-radio .radio-item label::before {
+  left: 0;
+  padding: 0;
 }
 
 .list-radio .radio-item label::after {
-  margin-left: -20px;
-  background-color: transparent;
-  width: 16px;
-  height: 16px;
-  border-radius: 0;
-  margin-top: 10px;
-  background-image: url("../images/chevron-right.png");
+  left: auto;
+  right: 0;
+  padding: 0;
 }
 
 .list-radio .radio-item.checked {
@@ -60,14 +68,46 @@ $covid55: #7AD15188; */
   margin-left: 30px;
   margin-right: 30px;
   color: white;
+  padding: 0 20px;
 }
 
 .list-radio .radio-item.checked:hover {
   color: white;
 }
 
+.list-radio .radio-item.checked label::before, .list-radio .radio-item.checked label::after {
+  font-family: "FontAwesome";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  border: none;
+  background: transparent;
+}
+
+.list-radio .radio-item.checked label::before {
+  content: "\f105";
+}
+
+.list-radio .radio-item.checked label::after {
+  content: "\f104";
+}
+
 .list-radio .radio-item .input-sm {
   font-size: 18px;
+}
+
+.list-radio .radio-text-item.radio-item .form-group.other-text-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list-radio .radio-text-item.radio-item.checked .form-group.other-text-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-radio .radio-text-item.radio-item.checked label::after {
+  content: "";
 }
 
 .list-radio.bi .radio-item {

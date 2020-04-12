@@ -7,10 +7,14 @@
         background: lighten($CovidBlue, 35%);
         color: #222;
         font-weight: normal;
-        padding-right: 20px;
+        padding-left: 0;
         margin-bottom: 0;
         border-bottom: 1px solid #ddd;
          
+        input[type="radio"]{
+            display: none;
+        }
+
         &:hover{
             background: #666;
             color: white;
@@ -20,26 +24,32 @@
             margin-bottom: 0;
             display: block;
             font-weight: normal;
-            margin-left: 10px;
+            //margin-left: 10px; 
             padding: 10px;
             text-align: center;
 
+            &::before,
+            &::after{
+                margin: 0;
+                display: inline-block;
+                content: "";
+                width: auto;
+                height: auto;
+                border: none; 
+                top: 6px;
+                background: transparent;
+            } 
+
             &::before{
-                margin-left:-2000px;
-                border: none;
-                background-color: transparent;
-                border-radius: 0;
+                left: 0;
+                padding: 0;
             }
 
             &::after{
-                margin-left: -20px;
-                background-color: transparent;
-                width: 16px;
-                height: 16px;
-                border-radius:0;
-                margin-top: 10px;
-                background-image: url("../images/chevron-right.png")
-            }  
+                left: auto;
+                right: 0;
+                padding: 0;
+            }
         }
 
         &.checked {
@@ -47,15 +57,61 @@
             margin-left: 30px;
             margin-right: 30px;
             color: white;
+            padding: 0 20px;
             &:hover{
                 color: white;
+            }
+
+            label{
+                &::before,
+                &::after{
+                    font-family: "FontAwesome";
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 1.2;
+                    //width: auto;
+                    //height: auto;
+                    
+                    border: none; 
+                    background: transparent;
+                } 
+
+                &::before{
+                    content: "\f105";
+                }
+
+                &::after{
+                    content: "\f104";
+                }
             }
         }
 
         .input-sm{
             font-size: 18px;
         }
-    }   
+    }
+    
+    .radio-text-item.radio-item{
+
+        .form-group.other-text-item{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &.checked {
+            .form-group.other-text-item{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            label{
+
+                &::after{
+                    content: "";
+                }
+            }
+        }
+    }
 
     &.bi{
         .radio-item{

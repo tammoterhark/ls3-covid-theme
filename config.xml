@@ -4,14 +4,14 @@
     (¯`·._.·(¯`·._.· Vanilla Theme Manifest  ·._.·´¯)·._.·´¯)
 
     Base configuration for Vanilla Theme.
-    The content of this file is imported into DB when you install the template.
+    The content of this file is imported into DB when you install the theme.
 
 -->
 <config>
     <!-- Those metadata are displayed in the theme configuration page.  -->
     <metadata>
-        <name>ls3-covid-template</name>
-        <title>Your Covid-19 risk template</title>
+        <name>ls3-covid-theme</name>
+        <title>Your Covid-19 risk theme</title>
         <creationDate/>
         <author>ToolsForResearch|Evently</author>
         <authorEmail>surveys@toolsforresearch.com</authorEmail>
@@ -20,12 +20,12 @@
         <license>GNU General Public License version 2 or later</license>
         <version>3.0</version>
         <apiVersion>3</apiVersion>
-        <description >Your COVID-19 Risk survey template</description>
+        <description >Your COVID-19 Risk survey theme</description>
         <last_update>2020-03-29 22:17:56</last_update>
     <extends>vanilla</extends></metadata>
 
     <!--
-        Here the list of the css/js files to add to the template package.
+        Here the list of the css/js files to add to the theme package.
         About packages in Yii: http://www.yiiframework.com/doc/api/1.1/CClientScript#packages-detail
 
         NOTE: The "add" tag also count as a "replace" tag.

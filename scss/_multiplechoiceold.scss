@@ -1,0 +1,70 @@
+.multiple-opt{
+    &.input-error{
+        .answer-container{
+            background: $CovidPink;
+        }
+    }
+
+    li.question-item{
+        background: lighten($CovidBlue, 35%);
+        color: #222;
+        font-weight: normal;
+        padding: 10px;
+        margin-bottom: 5px;
+
+        .input-sm{
+            font-size: 18px;
+        }
+         
+        &:hover{
+            background: #666;
+            color: white;
+        }
+
+        .checkbox-item{
+            padding-left: 0;
+        }
+
+        label{
+            margin-bottom: 0;
+            display: block;
+            font-weight: normal;
+            margin-left: 20px;
+
+            &::before{
+                margin-left:-2000px;
+                border: none;
+                background-color: transparent;
+                border-radius: 0;
+            }
+
+            &::after{
+                margin-left: -20px;
+                background-color: transparent;
+                width: 16px;
+                height: 16px;
+                border-radius:0;
+            }  
+        }
+
+        &.checked {
+            background: #bbb;           
+            margin-left: 30px;
+            margin-right: 30px;
+            &:hover{
+                color: black;
+            }
+        }
+    } 
+}
+
+.checkbox-item input[type="checkbox"] + label::after{
+	font-family: "FontAwesome";
+	content: "\f096";
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label::after{
+	content: "\f046";
+}

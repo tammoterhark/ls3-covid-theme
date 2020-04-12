@@ -5,66 +5,108 @@
         }
     }
 
-    li.question-item{
-        background: lighten($CovidBlue, 35%);
-        color: #222;
-        font-weight: normal;
-        padding: 10px;
-        margin-bottom: 5px;
-
-        .input-sm{
-            font-size: 18px;
-        }
-         
-        &:hover{
-            background: #666;
-            color: white;
-        }
-
-        .checkbox-item{
-            padding-left: 0;
-        }
-
-        label{
-            margin-bottom: 0;
-            display: block;
+    li{
+        &.checkbox-item{
+            padding:0;
+            background: lighten($CovidBlue, 35%);
+            color: #222;
             font-weight: normal;
-            margin-left: 20px;
+            margin-bottom: 5px;
 
-            &::before{
-                margin-left:-2000px;
-                border: none;
-                background-color: transparent;
-                border-radius: 0;
+            input[type="checkbox"]{
+                display: none;
+            }
+            
+            .input-sm{
+                font-size: 18px;
+            }
+            
+            &:hover{
+                background: #666;
+                color: white;
             }
 
-            &::after{
-                margin-left: -20px;
-                background-color: transparent;
-                width: 16px;
-                height: 16px;
-                border-radius:0;
+            label{
+                margin-bottom: 0;
+                display: block;
+                font-weight: normal;
+                margin-left: 20px;
+                padding: 10px;
+
+                &::before,
+                &::after{
+                    font-family: "FontAwesome";
+                    content: "\f096";
+                    font-size: 18px;
+                    line-height: 1.2;
+                    top: 10px;
+                    border: none; 
+                    background: transparent;
+                }
+
+                &::before{
+                    left: 10px;
+                }
+
+                &::after{
+                    left: auto;
+                    right: 10px;
+                }
             }  
         }
 
         &.checked {
-            background: #bbb;           
-            margin-left: 30px;
-            margin-right: 30px;
-            &:hover{
-                color: black;
+            background: $CovidBlue;
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
+
+            label{
+                &::before,
+                &::after{
+                    content: "\f046";
+                    color: white;
+                }
+            }
+        }  
+        
+        &.checkbox-text-item{
+
+            .form-group.other-text-item{
+                padding: 15px;
+            }
+
+            label::after{
+                content: "";
+            }
+            
+            
+            &.checked{
+                label::after{
+                    content: "";
+                }
+
+                .form-group.other-text-item{
+                    &::after{
+                        content: "";
+                    }
+                }
             }
         }
-    } 
+    }
 }
 
-.checkbox-item input[type="checkbox"] + label::after{
-	font-family: "FontAwesome";
-	content: "\f096";
-    font-size: 18px;
-    line-height: 1.2;
+
+.checkbox-item input[type="checkbox"]:checked + label::after {
+    content: "\f046";
 }
 
-.checkbox-item input[type="checkbox"]:checked + label::after{
-	content: "\f046";
+.checkbox-item.checkbox-text-item input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+@media (max-width: 767px){
+    li.checkbox-item.checkbox-text-item .form-group.other-text-item{
+        padding: 0 15px 15px;
+    }
 }

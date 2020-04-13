@@ -57,4 +57,14 @@ $(document).on('ready pjax:scriptcomplete',function(){
     }
   });
   $('.question-container').removeClass('input-error');
+  var inputErrorDelay0 = setInterval(function(){
+    $('.question-container').removeClass('input-error');
+    clearInterval(inputErrorDelay0);
+    //console.log('inputErrorDelay0');
+  }, 0);
+  var inputErrorDelay500 = setInterval(function(){
+    $('.question-container').removeClass('input-error');
+    clearInterval(inputErrorDelay500);
+    //console.log('inputErrorDelay500');
+  }, 500);
 });

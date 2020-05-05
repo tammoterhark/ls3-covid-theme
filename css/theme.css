@@ -484,4 +484,17 @@ select.form-control {
 .navbar-default .navbar-nav > li.form-change-lang li a {
   color: #333;
 }
+
+.form-change-lang {
+  background: white;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.privacy {
+  background: white;
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=theme.css.map */

@@ -20,6 +20,7 @@ $covid55: #7AD15188; */
   color: #222;
   font-weight: normal;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
 }
@@ -37,7 +38,7 @@ $covid55: #7AD15188; */
   margin-bottom: 0;
   display: block;
   font-weight: normal;
-  padding: 10px;
+  padding: 10px 30px;
   text-align: center;
 }
 
@@ -50,17 +51,17 @@ $covid55: #7AD15188; */
   border: none;
   top: 6px;
   background: transparent;
+  padding: 0;
 }
 
 .list-radio .radio-item label::before {
   left: 0;
-  padding: 0;
+  right: auto;
 }
 
 .list-radio .radio-item label::after {
   left: auto;
   right: 0;
-  padding: 0;
 }
 
 .list-radio .radio-item.checked {
@@ -79,6 +80,8 @@ $covid55: #7AD15188; */
   font-family: "FontAwesome";
   font-weight: bold;
   font-size: 24px;
+  width: 24px;
+  height: 24px;
   line-height: 1.2;
   border: none;
   background: transparent;
@@ -112,6 +115,15 @@ $covid55: #7AD15188; */
 }
 
 .list-radio .radio-text-item.radio-item.checked label::after {
+  content: "";
+}
+
+.dir-rtl .list-radio .radio-text-item.radio-item.checked label::after {
+  content: "\f104";
+  margin-left: -5px;
+}
+
+.dir-rtl .list-radio .radio-text-item.radio-item.checked label::before {
   content: "";
 }
 
@@ -242,27 +254,35 @@ $covid55: #7AD15188; */
   margin-bottom: 0;
   display: block;
   font-weight: normal;
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 10px;
 }
 
 .multiple-opt li.checkbox-item label::before, .multiple-opt li.checkbox-item label::after {
   font-family: "FontAwesome";
   content: "\f096";
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.2;
-  top: 10px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
   border: none;
   background: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .multiple-opt li.checkbox-item label::before {
-  left: 10px;
+  left: -20px;
+  right: auto;
 }
 
 .multiple-opt li.checkbox-item label::after {
   left: auto;
-  right: 10px;
+  right: -20px;
 }
 
 .multiple-opt li.checked {
@@ -291,6 +311,16 @@ $covid55: #7AD15188; */
 
 .multiple-opt li.checkbox-text-item.checked .form-group.other-text-item::after {
   content: "";
+}
+
+.dir-rtl .multiple-opt li.checkbox-item label::before {
+  left: auto;
+  right: -20px;
+}
+
+.dir-rtl .multiple-opt li.checkbox-item label::after {
+  right: auto;
+  left: -20px;
 }
 
 .checkbox-item input[type="checkbox"]:checked + label::after {
@@ -331,6 +361,10 @@ $covid55: #7AD15188; */
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
+}
+
+.numeric-multi .hide-tip {
+  display: none;
 }
 
 body {

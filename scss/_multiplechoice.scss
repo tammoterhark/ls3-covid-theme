@@ -30,27 +30,35 @@
                 margin-bottom: 0;
                 display: block;
                 font-weight: normal;
-                margin-left: 20px;
+                margin-left: 40px;
+                margin-right: 40px;
                 padding: 10px;
 
                 &::before,
                 &::after{
                     font-family: "FontAwesome";
                     content: "\f096";
-                    font-size: 18px;
+                    font-size: 24px;
                     line-height: 1.2;
-                    top: 10px;
+                    top: 8px;
+                    width: 24px;
+                    height: 24px;
                     border: none; 
                     background: transparent;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-right: 0;
+                    padding-left: 0;
                 }
 
                 &::before{
-                    left: 10px;
+                    left: -20px;
+                    right: auto;
                 }
 
                 &::after{
                     left: auto;
-                    right: 10px;
+                    right: -20px;
                 }
             }  
         }
@@ -62,6 +70,7 @@
             margin-right: 15px;
 
             label{
+                
                 &::before,
                 &::after{
                     content: "\f046";
@@ -71,7 +80,6 @@
         }  
         
         &.checkbox-text-item{
-
             .form-group.other-text-item{
                 padding: 15px;
             }
@@ -79,7 +87,6 @@
             label::after{
                 content: "";
             }
-            
             
             &.checked{
                 label::after{
@@ -96,6 +103,25 @@
     }
 }
 
+.dir-rtl{
+    .multiple-opt{
+        li{
+            &.checkbox-item{
+                label{
+                    &::before{
+                        left: auto;
+                        right: -20px;
+                    }
+
+                    &::after{
+                        right: auto;
+                        left: -20px;
+                    }
+                }  
+            }
+        }
+    }
+}
 
 .checkbox-item input[type="checkbox"]:checked + label::after {
     content: "\f046";

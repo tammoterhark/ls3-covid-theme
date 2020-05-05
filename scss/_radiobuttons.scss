@@ -8,6 +8,7 @@
         color: #222;
         font-weight: normal;
         padding-left: 0;
+        padding-right: 0;
         margin-bottom: 0;
         border-bottom: 1px solid #ddd;
          
@@ -24,9 +25,9 @@
             margin-bottom: 0;
             display: block;
             font-weight: normal;
-            //margin-left: 10px; 
-            padding: 10px;
+            padding: 10px 30px;
             text-align: center;
+
 
             &::before,
             &::after{
@@ -38,17 +39,17 @@
                 border: none; 
                 top: 6px;
                 background: transparent;
+                padding: 0;
             } 
 
             &::before{
                 left: 0;
-                padding: 0;
+                right: auto;
             }
 
             &::after{
                 left: auto;
                 right: 0;
-                padding: 0;
             }
         }
 
@@ -68,10 +69,9 @@
                     font-family: "FontAwesome";
                     font-weight: bold;
                     font-size: 24px;
+                    width: 24px;
+                    height: 24px;
                     line-height: 1.2;
-                    //width: auto;
-                    //height: auto;
-                    
                     border: none; 
                     background: transparent;
                 } 
@@ -117,7 +117,29 @@
             }
         }
     }
+}
 
+.dir-rtl{
+    .list-radio{            
+        .radio-text-item.radio-item{
+            &.checked {
+                label{
+
+                    &::after{
+                        content: "\f104";
+                        margin-left: -5px;
+                    }
+    
+                    &::before{
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list-radio{
     &.bi{
         .radio-item{
             color: white;
@@ -200,4 +222,4 @@
             }
         }
     }
-} 
+}

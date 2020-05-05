@@ -8,7 +8,6 @@
     li{
         &.checkbox-item{
             padding:0;
-            background: lighten($CovidBlue, 35%);
             color: #222;
             font-weight: normal;
             margin-bottom: 5px;
@@ -20,19 +19,23 @@
             .input-sm{
                 font-size: 18px;
             }
-            
-            &:hover{
-                background: #666;
-                color: white;
-            }
 
             label{
                 margin-bottom: 0;
                 display: block;
                 font-weight: normal;
-                margin-left: 40px;
-                margin-right: 40px;
-                padding: 10px;
+                padding: 10px 40px;
+                background: lighten($CovidBlue, 35%);
+
+                &:hover{
+                    background: #666;
+                    color: white;
+
+                    &::before,
+                    &::after{
+                        color: white;
+                    }
+                }
 
                 &::before,
                 &::after{
@@ -49,58 +52,43 @@
                     margin-right: 0;
                     padding-right: 0;
                     padding-left: 0;
+                    display: inline-block;
+                    width: 30px;
                 }
 
                 &::before{
-                    left: -20px;
+                    left: 10px;
                     right: auto;
+                    text-align: left;
                 }
 
                 &::after{
                     left: auto;
-                    right: -20px;
+                    right: 10px;
+                    text-align: right;
                 }
             }  
         }
 
-        &.checked {
-            background: $CovidBlue;
-            color: white;
-            margin-left: 15px;
-            margin-right: 15px;
-
-            label{
-                
-                &::before,
-                &::after{
-                    content: "\f046";
-                    color: white;
-                }
-            }
-        }  
-        
         &.checkbox-text-item{
-            .form-group.other-text-item{
-                padding: 15px;
-            }
-
             label::after{
-                content: "";
-            }
-            
-            &.checked{
-                label::after{
-                    content: "";
-                }
-
-                .form-group.other-text-item{
-                    &::after{
-                        content: "";
-                    }
-                }
+                display: none;
             }
         }
     }
+}
+
+.checkbox-item input[type="checkbox"]:checked + label::after,
+.checkbox-item input[type="checkbox"]:checked + label::before {
+    content: "\f046";
+    color: white;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label{
+    background: $CovidBlue;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .dir-rtl{
@@ -110,12 +98,14 @@
                 label{
                     &::before{
                         left: auto;
-                        right: -20px;
+                        right: 10px;
+                        text-align: right;
                     }
 
                     &::after{
                         right: auto;
-                        left: -20px;
+                        left: 10px;
+                        text-align: left;
                     }
                 }  
             }
@@ -123,12 +113,9 @@
     }
 }
 
-.checkbox-item input[type="checkbox"]:checked + label::after {
-    content: "\f046";
-}
-
 .checkbox-item.checkbox-text-item input[type="checkbox"]:checked + label::after {
     content: "";
+    display: none;
 }
 
 @media (max-width: 767px){

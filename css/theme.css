@@ -231,7 +231,6 @@ $covid55: #7AD15188; */
 
 .multiple-opt li.checkbox-item {
   padding: 0;
-  background: #92a8c9;
   color: #222;
   font-weight: normal;
   margin-bottom: 5px;
@@ -245,18 +244,21 @@ $covid55: #7AD15188; */
   font-size: 18px;
 }
 
-.multiple-opt li.checkbox-item:hover {
-  background: #666;
-  color: white;
-}
-
 .multiple-opt li.checkbox-item label {
   margin-bottom: 0;
   display: block;
   font-weight: normal;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 10px;
+  padding: 10px 40px;
+  background: #92a8c9;
+}
+
+.multiple-opt li.checkbox-item label:hover {
+  background: #666;
+  color: white;
+}
+
+.multiple-opt li.checkbox-item label:hover::before, .multiple-opt li.checkbox-item label:hover::after {
+  color: white;
 }
 
 .multiple-opt li.checkbox-item label::before, .multiple-opt li.checkbox-item label::after {
@@ -273,62 +275,54 @@ $covid55: #7AD15188; */
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
+  display: inline-block;
+  width: 30px;
 }
 
 .multiple-opt li.checkbox-item label::before {
-  left: -20px;
+  left: 10px;
   right: auto;
+  text-align: left;
 }
 
 .multiple-opt li.checkbox-item label::after {
   left: auto;
-  right: -20px;
+  right: 10px;
+  text-align: right;
 }
 
-.multiple-opt li.checked {
+.multiple-opt li.checkbox-text-item label::after {
+  display: none;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label::after,
+.checkbox-item input[type="checkbox"]:checked + label::before {
+  content: "\f046";
+  color: white;
+}
+
+.checkbox-item input[type="checkbox"]:checked + label {
   background: #384e71;
   color: white;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.multiple-opt li.checked label::before, .multiple-opt li.checked label::after {
-  content: "\f046";
-  color: white;
-}
-
-.multiple-opt li.checkbox-text-item .form-group.other-text-item {
-  padding: 15px;
-}
-
-.multiple-opt li.checkbox-text-item label::after {
-  content: "";
-}
-
-.multiple-opt li.checkbox-text-item.checked label::after {
-  content: "";
-}
-
-.multiple-opt li.checkbox-text-item.checked .form-group.other-text-item::after {
-  content: "";
-}
-
 .dir-rtl .multiple-opt li.checkbox-item label::before {
   left: auto;
-  right: -20px;
+  right: 10px;
+  text-align: right;
 }
 
 .dir-rtl .multiple-opt li.checkbox-item label::after {
   right: auto;
-  left: -20px;
-}
-
-.checkbox-item input[type="checkbox"]:checked + label::after {
-  content: "\f046";
+  left: 10px;
+  text-align: left;
 }
 
 .checkbox-item.checkbox-text-item input[type="checkbox"]:checked + label::after {
   content: "";
+  display: none;
 }
 
 @media (max-width: 767px) {

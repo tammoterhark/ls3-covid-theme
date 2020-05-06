@@ -28,21 +28,23 @@
         />
 
         <label for="SOTH{{ name }}" class="control-label label-radio" id="label-id-{{ name }}">{{ othertext }}</label>
+
+        <div class="form-group text-item other-text-item">
+            <input
+            type="text"
+            class="form-control {{ kpclass }} input-sm"
+            id="answer{{ name }}othertext"
+            name="{{ name }}other"
+            title="{{ gT('Other') }}"
+            {{ answer_other }}
+            aria-labelledby="label-id-{{ name }}"
+            {% if numbers_only %} data-number="1" {% endif %}
+            />
+        </div>
     </div>
 
     <!-- comment -->
-    <div class="form-group text-item other-text-item">
-        <input
-        type="text"
-        class="form-control {{ kpclass }} input-sm"
-        id="answer{{ name }}othertext"
-        name="{{ name }}other"
-        title="{{ gT('Other') }}"
-        {{ answer_other }}
-        aria-labelledby="label-id-{{ name }}"
-        {% if numbers_only %} data-number="1" {% endif %}
-        />
-    </div>
+    
     <script>
         $("#answer{{ name }}othertext").on("keyup",function(){
             if($.trim($(this).val())!=''){ $('#SOTH{{ name }}').click(); };

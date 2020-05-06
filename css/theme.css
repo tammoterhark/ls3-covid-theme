@@ -16,6 +16,15 @@ $covid55: #7AD15188; */
 }
 
 .list-radio .radio-item {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list-radio .radio-item input[type="radio"] {
+  display: none;
+}
+
+.list-radio .radio-item label {
   background: #92a8c9;
   color: #222;
   font-weight: normal;
@@ -23,23 +32,14 @@ $covid55: #7AD15188; */
   padding-right: 0;
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
-}
-
-.list-radio .radio-item input[type="radio"] {
-  display: none;
-}
-
-.list-radio .radio-item:hover {
-  background: #666;
-  color: white;
-}
-
-.list-radio .radio-item label {
-  margin-bottom: 0;
   display: block;
-  font-weight: normal;
   padding: 10px 30px;
   text-align: center;
+}
+
+.list-radio .radio-item label:hover {
+  background: #666;
+  color: white;
 }
 
 .list-radio .radio-item label::before, .list-radio .radio-item label::after {
@@ -55,28 +55,28 @@ $covid55: #7AD15188; */
 }
 
 .list-radio .radio-item label::before {
-  left: 0;
+  left: 5px;
   right: auto;
 }
 
 .list-radio .radio-item label::after {
   left: auto;
-  right: 0;
+  right: 5px;
 }
 
-.list-radio .radio-item.checked {
+.list-radio .radio-item input[type="radio"]:checked + label {
   background: #b71f2b;
   margin-left: 30px;
   margin-right: 30px;
   color: white;
-  padding: 0 20px;
 }
 
-.list-radio .radio-item.checked:hover {
+.list-radio .radio-item input[type="radio"]:checked + label:hover {
   color: white;
 }
 
-.list-radio .radio-item.checked label::before, .list-radio .radio-item.checked label::after {
+.list-radio .radio-item input[type="radio"]:checked + label::before,
+.list-radio .radio-item input[type="radio"]:checked + label::after {
   font-family: "FontAwesome";
   font-weight: bold;
   font-size: 24px;
@@ -87,46 +87,49 @@ $covid55: #7AD15188; */
   background: transparent;
 }
 
-.list-radio .radio-item.checked label::before {
+.list-radio .radio-item input[type="radio"]:checked + label::before {
   content: "\f105";
 }
 
-.list-radio .radio-item.checked label::after {
+.list-radio .radio-item input[type="radio"]:checked + label::after {
   content: "\f104";
+}
+
+.list-radio .radio-item input[type="radio"] + label + div.form-group.text-item {
+  padding: 5px 0 0;
+}
+
+.list-radio .radio-item input[type="radio"]:checked + label + div.form-group.text-item {
+  padding: 5px 30px 0;
+}
+
+.list-radio .radio-item input[type="radio"]:checked + label + div.form-group.text-item input[type="text"] {
+  background: lightyellow;
 }
 
 .list-radio .radio-item .input-sm {
   font-size: 18px;
 }
 
-.list-radio .radio-text-item.radio-item .form-group.other-text-item {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/* .dir-rtl{
+    .list-radio{            
+        .radio-text-item.radio-item{
+            &.checked {
+                label{
 
-.list-radio .radio-text-item.radio-item.checked .form-group.other-text-item {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.list-radio .radio-text-item.radio-item.checked label::before {
-  content: "\f105";
-  margin-left: -5px;
-}
-
-.list-radio .radio-text-item.radio-item.checked label::after {
-  content: "";
-}
-
-.dir-rtl .list-radio .radio-text-item.radio-item.checked label::after {
-  content: "\f104";
-  margin-left: -5px;
-}
-
-.dir-rtl .list-radio .radio-text-item.radio-item.checked label::before {
-  content: "";
-}
-
+                    &::after{
+                        content: "\f104";
+                        margin-left: -5px;
+                    }
+    
+                    &::before{
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+} */
 .list-radio.bi .radio-item {
   color: white;
 }

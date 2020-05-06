@@ -30,20 +30,21 @@
                 aria-hidden="true"
             />
             <label for="answer{{myfname}}cbox" class="answertext" id="label-{{myfname}}-other">{{othertext}}</label>
+
+            <div class="form-group text-item other-text-item">
+                <input
+                    class="form-control input-sm {{kpclass}}"
+                    type="text"
+                    name="{{myfname}}"
+                    id="answer{{myfname}}"
+                    value="{{sValue}}"
+                    aria-labelledby="label-{{myfname}}-other"
+                />
+            </div>
         </div>
 
         <!-- comment -->
-        <div class="form-group text-item other-text-item">
-            <input
-                class="form-control input-sm {{kpclass}}"
-                type="text"
-                name="{{myfname}}"
-                id="answer{{myfname}}"
-                value="{{sValue}}"
-                aria-labelledby="label-{{myfname}}-other"
-            />
-        </div>
-
+        
 
         <!-- hidden input -->
         <input

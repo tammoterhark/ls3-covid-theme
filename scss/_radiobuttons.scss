@@ -7,6 +7,7 @@
         
         margin-bottom: 0;
         padding-left: 0;
+        padding-right: 0;
 
         input[type="radio"]{
             display: none;
@@ -100,27 +101,19 @@
             font-size: 18px;
         }
     }
-}
 
-/* .dir-rtl{
-    .list-radio{            
-        .radio-text-item.radio-item{
-            &.checked {
-                label{
+    @media (min-width: 768px) {
+        .form-inline .form-group {
+          display: block;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
 
-                    &::after{
-                        content: "\f104";
-                        margin-left: -5px;
-                    }
-    
-                    &::before{
-                        content: "";
-                    }
-                }
-            }
+        .form-inline .form-control{
+            width: 100%;
         }
     }
-} */
+}
 
 .list-radio{
     &.bi{

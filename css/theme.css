@@ -18,6 +18,7 @@ $covid55: #7AD15188; */
 .list-radio .radio-item {
   margin-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .list-radio .radio-item input[type="radio"] {
@@ -111,25 +112,17 @@ $covid55: #7AD15188; */
   font-size: 18px;
 }
 
-/* .dir-rtl{
-    .list-radio{            
-        .radio-text-item.radio-item{
-            &.checked {
-                label{
+@media (min-width: 768px) {
+  .list-radio .form-inline .form-group {
+    display: block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .list-radio .form-inline .form-control {
+    width: 100%;
+  }
+}
 
-                    &::after{
-                        content: "\f104";
-                        margin-left: -5px;
-                    }
-    
-                    &::before{
-                        content: "";
-                    }
-                }
-            }
-        }
-    }
-} */
 .list-radio.bi .radio-item {
   color: white;
 }

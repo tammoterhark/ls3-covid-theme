@@ -26,6 +26,7 @@
                 font-weight: normal;
                 padding: 10px 40px;
                 background: lighten($CovidBlue, 35%);
+                text-align: center;
 
                 &:hover{
                     background: #666;
@@ -78,6 +79,7 @@
     
                 input[type="text"]{
                     background: lightyellow;
+                    text-align: center;
                     border-color: #66afe9;
                 }
             }
@@ -87,8 +89,6 @@
     @media (min-width: 768px) {
         .form-inline .form-group {
           display: block;
-          margin-bottom: 0;
-          vertical-align: middle;
         }
 
         .form-inline .form-control{

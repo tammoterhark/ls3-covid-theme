@@ -94,19 +94,29 @@
 
             input[type="text"]{
                 background: lightyellow;
+                text-align: center;
             }
         }
 
         .input-sm{
             font-size: 18px;
         }
+
+        .form-inline .form-group {
+            display: block;
+            margin-bottom: 0;
+            vertical-align: middle;
+          }
+  
+          .form-inline .form-control{
+              width: 100%;
+              
+          }
     }
 
     @media (min-width: 768px) {
         .form-inline .form-group {
           display: block;
-          margin-bottom: 0;
-          vertical-align: middle;
         }
 
         .form-inline .form-control{

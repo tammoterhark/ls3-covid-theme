@@ -106,17 +106,26 @@ $covid55: #7AD15188; */
 
 .list-radio .radio-item input[type="radio"]:checked + label + div.form-group.text-item input[type="text"] {
   background: lightyellow;
+  text-align: center;
 }
 
 .list-radio .radio-item .input-sm {
   font-size: 18px;
 }
 
+.list-radio .radio-item .form-inline .form-group {
+  display: block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.list-radio .radio-item .form-inline .form-control {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .list-radio .form-inline .form-group {
     display: block;
-    margin-bottom: 0;
-    vertical-align: middle;
   }
   .list-radio .form-inline .form-control {
     width: 100%;
@@ -246,6 +255,7 @@ $covid55: #7AD15188; */
   font-weight: normal;
   padding: 10px 40px;
   background: #92a8c9;
+  text-align: center;
 }
 
 .multiple-opt li.checkbox-item label:hover {
@@ -297,14 +307,13 @@ $covid55: #7AD15188; */
 
 .multiple-opt li.checkbox-item input[type="checkbox"]:checked + label + div.form-group.text-item input[type="text"] {
   background: lightyellow;
+  text-align: center;
   border-color: #66afe9;
 }
 
 @media (min-width: 768px) {
   .multiple-opt .form-inline .form-group {
     display: block;
-    margin-bottom: 0;
-    vertical-align: middle;
   }
   .multiple-opt .form-inline .form-control {
     width: 100%;

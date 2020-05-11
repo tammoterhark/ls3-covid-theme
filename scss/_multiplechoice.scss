@@ -8,7 +8,6 @@
     li{
         &.checkbox-item{
             padding:0;
-            background: lighten($CovidBlue, 35%);
             color: #222;
             font-weight: normal;
             margin-bottom: 5px;
@@ -20,93 +19,93 @@
             .input-sm{
                 font-size: 18px;
             }
-            
-            &:hover{
-                background: #666;
-                color: white;
-            }
 
             label{
                 margin-bottom: 0;
                 display: block;
                 font-weight: normal;
-                margin-left: 20px;
-                padding: 10px;
+                padding: 10px 40px;
+                background: lighten($CovidBlue, 35%);
+                text-align: center;
+
+                &:hover{
+                    background: #666;
+                    color: white;
+
+                    &::before,
+                    &::after{
+                        color: white;
+                    }
+                }
 
                 &::before,
                 &::after{
                     font-family: "FontAwesome";
                     content: "\f096";
-                    font-size: 18px;
+                    font-size: 24px;
                     line-height: 1.2;
-                    top: 10px;
+                    top: 8px;
+                    width: 24px;
+                    height: 24px;
                     border: none; 
                     background: transparent;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-right: 0;
+                    padding-left: 0;
+                    display: inline-block;
+                    width: 30px;
                 }
 
                 &::before{
                     left: 10px;
+                    right: auto;
+                    text-align: left;
                 }
 
                 &::after{
                     left: auto;
                     right: 10px;
+                    text-align: right;
                 }
-            }  
-        }
-
-        &.checked {
-            background: $CovidBlue;
-            color: white;
-            margin-left: 15px;
-            margin-right: 15px;
-
-            label{
-                &::before,
-                &::after{
-                    content: "\f046";
-                    color: white;
-                }
-            }
-        }  
-        
-        &.checkbox-text-item{
-
-            .form-group.other-text-item{
-                padding: 15px;
-            }
-
-            label::after{
-                content: "";
-            }
+            } 
             
-            
-            &.checked{
-                label::after{
-                    content: "";
-                }
-
-                .form-group.other-text-item{
-                    &::after{
-                        content: "";
-                    }
+            input[type="checkbox"] + label + div.form-group.text-item{
+                padding: 5px 0 0;
+            }
+    
+            input[type="checkbox"]:checked + label + div.form-group.text-item{
+                padding: 5px 15px 0;
+    
+                input[type="text"]{
+                    background: lightyellow;
+                    text-align: center;
+                    border-color: #66afe9;
                 }
             }
         }
     }
+
+    @media (min-width: 768px) {
+        .form-inline .form-group {
+          display: block;
+        }
+
+        .form-inline .form-control{
+            width: 100%;
+        }
+    }
 }
 
-
-.checkbox-item input[type="checkbox"]:checked + label::after {
+.checkbox-item input[type="checkbox"]:checked + label::after,
+.checkbox-item input[type="checkbox"]:checked + label::before {
     content: "\f046";
+    color: white;
 }
 
-.checkbox-item.checkbox-text-item input[type="checkbox"]:checked + label::after {
-    content: "";
-}
-
-@media (max-width: 767px){
-    li.checkbox-item.checkbox-text-item .form-group.other-text-item{
-        padding: 0 15px 15px;
-    }
+.checkbox-item input[type="checkbox"]:checked + label{
+    background: $CovidBlue;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
 }

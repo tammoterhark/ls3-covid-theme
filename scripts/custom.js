@@ -67,4 +67,5 @@ $(document).on('ready pjax:scriptcomplete',function(){
     clearInterval(inputErrorDelay500);
     //console.log('inputErrorDelay500');
   }, 500);
+  $('.ls-language-link[data-limesurvey-lang="en"]').text('English');
 });

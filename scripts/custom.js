@@ -68,4 +68,10 @@ $(document).on('ready pjax:scriptcomplete',function(){
     //console.log('inputErrorDelay500');
   }, 500);
   $('.ls-language-link[data-limesurvey-lang="en"]').text('English');
+  var themelang = $('html').attr('lang');
+  //console.log('themelang = ' + themelang);
+  if (themelang == "am") {
+    $('.ls-move-next-btn').text('ወደ ኋላ ይመለሱ');
+    $('.ls-move-previous-btn').text('ወደ የሚቀጥለው ገጽ');
+  }
 });

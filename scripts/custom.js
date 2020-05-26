@@ -71,7 +71,7 @@ $(document).on('ready pjax:scriptcomplete',function(){
   var themelang = $('html').attr('lang');
   //console.log('themelang = ' + themelang);
   if (themelang == "am") {
-    $('.ls-move-next-btn').text('ወደ ኋላ ይመለሱ');
-    $('.ls-move-previous-btn').text('ወደ የሚቀጥለው ገጽ');
+    $('.ls-move-previous-btn').text('ወደ ኋላ ይመለሱ');
+    $('.ls-move-next-btn').text('ወደ የሚቀጥለው ገጽ');
   }
 });

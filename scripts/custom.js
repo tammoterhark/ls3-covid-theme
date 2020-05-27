@@ -70,11 +70,11 @@ $(document).on('ready pjax:scriptcomplete',function(){
   $('.ls-language-link[data-limesurvey-lang="en"]').text('English');
   var themelang = $('html').attr('lang');
   //console.log('themelang = ' + themelang);
-  var inner = $('.list-question-select').children().first().html();
-  //console.log('inner = ' + inner);
   if (themelang == "am") {
     $('.ls-move-previous-btn').text('ወደ ኋላ ይመለሱ');
     $('.ls-move-next-btn').text('ወደ የሚቀጥለው ገጽ');
+    var inner = $('.list-question-select').children().first().html();
+    //console.log('inner = ' + inner);
     // Check for 'Fadlan dooro...'
     if(inner.indexOf('Fadlan') > 0) {
       $('.list-question-select').children().first().text('እባክዎ ይምረጡ...');

@@ -80,4 +80,8 @@ $(document).on('ready pjax:scriptcomplete',function(){
       $('.list-question-select').children().first().text('እባክዎ ይምረጡ...');
     }
   }
+  if (themelang == "ur") {
+    $('.ls-move-previous-btn').text('پیچھے');
+    $('.ls-move-next-btn').text('آگے');
+  }
 });
